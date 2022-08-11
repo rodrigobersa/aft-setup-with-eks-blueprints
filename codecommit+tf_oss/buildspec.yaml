@@ -1,0 +1,25 @@
+version: 0.2
+env:
+  variables:
+    TERRAFORM_VER: "1.2.6"
+
+phases:
+  install:
+    commands:
+      - export TERRAFORM_VER=$TERRAFORM_VER
+      - echo $TERRAFORM_VER
+      - yum install -y wget unzip
+      - wget -q https://releases.hashicorp.com/terraform/${TERRAFORM_VER}/terraform_${TERRAFORM_VER}_linux_amd64.zip
+      - unzip terraform_${TERRAFORM_VER}_linux_amd64.zip
+      - mv terraform /usr/local/bin/
+  build:
+    commands:
+      - terraform init
+      - terraform plan
+      - terraform apply --auto-approve
+  post_build:
+    commands:
+      - echo "AFT deployment successfully" > definitions.json
+      
+artifacts:
+  files: definitions.json
