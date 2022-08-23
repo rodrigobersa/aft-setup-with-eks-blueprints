@@ -19,7 +19,7 @@ data "aws_eks_cluster_auth" "this" {
 data "aws_availability_zones" "available" {}
 
 locals {
-  name = basename(path.cwd)
+  name         = basename(path.cwd)
   cluster_name = coalesce(var.cluster_name, local.name)
   region       = "us-east-1"
 
@@ -40,10 +40,10 @@ module "eks_blueprints" {
   source = "github.com/aws-ia/terraform-aws-eks-blueprints?ref=v4.6.2"
 
   # EKS CLUSTER
-  cluster_version           = "1.21"
-  cluster_name              = "production-ready"
-  vpc_id                    = module.vpc.vpc_id
-  private_subnet_ids        = module.vpc.private_subnets
+  cluster_version    = "1.23"
+  cluster_name       = "production-ready"
+  vpc_id             = module.vpc.vpc_id
+  private_subnet_ids = module.vpc.private_subnets
 
   # EKS MANAGED NODE GROUPS
   managed_node_groups = {
@@ -51,6 +51,14 @@ module "eks_blueprints" {
       node_group_name = "managed-ondemand"
       instance_types  = ["m5.large"]
       subnet_ids      = module.vpc.private_subnets
+    }
+  }
+
+  platform_teams = {
+    admin = {
+      users = [
+        "<YOUR ASSUMED ROLE ARN>"
+      ]
     }
   }
 }
