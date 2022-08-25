@@ -19,7 +19,7 @@ module "aft-prd-01" {
   }
 
   change_management_parameters = {
-    change_requested_by = "Edgar Costa"
+    change_requested_by = "<REQUESTER-NAME>"
     change_reason       = "Production ready account with EKS Blueprints"
   }
 
