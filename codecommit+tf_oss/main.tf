@@ -15,5 +15,4 @@ module "aft" {
 
   # updating version
   terraform_version = "1.2.6"
-
 }
