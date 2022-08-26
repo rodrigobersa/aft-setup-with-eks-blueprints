@@ -12,7 +12,7 @@
 
   <p align="center">
     <br />
-    <a href="https://github.com/edgarsilva948/aft-setup"><strong>Example using AFT using AWS CodeCommit »</strong></a>
+    <a href="https://github.com/edgarsilva948/aft-setup/tree/main/codecommit%2Btf_oss"><strong>Example using AFT using AWS CodeCommit »</strong></a>
     <br />
     <br />
     <a href="https://github.com/edgarsilva948/aft-setup/issues">Report Bug</a>
@@ -37,6 +37,7 @@ Table of Contents
   <li><a href="#limitations">Limitations</a></li>
   <li><a href="#product-versions">Product versions</a></li>
   <li><a href="#target-technology-stack">Target technology stack</a></li>
+  <li><a href="#roadmap">Roadmap</a></li>
 </ol>
 
 # Summary
@@ -107,6 +108,16 @@ Product | Version
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+## Roadmap
+
+- [x] Add back to top links
+- [ ] Add the Bitbucket + Terraform Enterprise example
+- [x] Add the CodeCommit + Terraform Open Source example
+- [ ] Add the BitBucket + Terraform Open Source example
+- [ ] Add the Github + Terraform Open Source example
+- [ ] Add the Github Enterpsise + Terraform Cloud example
+- [ ] Add Multiple Account Customizations 
+    - [ ] Add Multiple Regions
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
