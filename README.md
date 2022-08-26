@@ -2,10 +2,27 @@
 
 [![Contributors][contributors-shield]][contributors-url]
 [![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![Forks][forks-shield]][forks-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
+<br />
+<div align="center">
+  <h3 align="center">Implementing a full end-to-end process for production ready accounts with AFT and EKS Blueprints</h3>
+
+  <p align="center">
+    <br />
+    <a href="https://github.com/edgarsilva948/aft-setup"><strong>Example using AFT using AWS CodeCommit »</strong></a>
+    <br />
+    <br />
+    <a href="https://github.com/edgarsilva948/aft-setup/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/edgarsilva948/aft-setup/issues">Request Feature</a>
+  </p>
+</div>
+
 <!-- TABLE OF CONTENTS -->
-<summary>Table of Contents</summary>
+Table of Contents
 <ol>
   <li>
     <a href="#Summary">Summary</a>
@@ -93,6 +110,10 @@ Product | Version
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+[issues-shield]: https://img.shields.io/github/issues/edgarsilva948/aft-setup.svg?style=for-the-badge
+[issues-url]: https://github.com/edgarsilva948/aft-setup/issues
+[forks-shield]: https://img.shields.io/github/forks/edgarsilva948/aft-setup.svg?style=for-the-badge
+[forks-url]: https://github.com/edgarsilva948/aft-setup/network/members
 [contributors-shield]: https://img.shields.io/github/contributors/edgarsilva948/aft-setup.svg?style=for-the-badge
 [contributors-url]: https://github.com/edgarsilva948/aft-setup/graphs/contributors
 [stars-shield]: https://img.shields.io/github/stars/edgarsilva948/aft-setup.svg?style=for-the-badge
