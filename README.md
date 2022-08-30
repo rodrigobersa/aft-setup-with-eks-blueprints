@@ -62,7 +62,7 @@ AWS also provides the Customizations for AWS Control Tower (CFCT)  to easily add
 
 Once the foundation is ready, customers need to create workloads within the accounts that will be launched. A common practice is the creation of EKS clusters, due to its relatively simple creation process. Yet there are many resources that need to be created within the cluster to allow Ingress Controller, DNS, Networks, CI/CD, Cluster Autoscaler, Metrics Server, Logging among others. This deployment process is called "Day 2 Operations" and EKS Blueprints makes it easy to provision a wide range of popular Kubernetes add-ons into an EKS cluster. Customers can use EKS Blueprints to configure and deploy purpose built EKS clusters, and start onboarding workloads in days, rather than months.
 
-### Prerequisites
+## Prerequisites
 
 * Administrator access in the AWS Management account.
 * Familiarity with Terraform.
@@ -78,7 +78,7 @@ First, ensure that you have installed the following tools locally.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### Limitations
+## Limitations
 
 * Email addresses of shared accounts in the Security OU can be changed, but you must update your landing zone to see these changes in the AWS Control Tower console.
 * A limit of 5 SCPs per OU applies to OUs in your AWS Control Tower landing zone.
@@ -86,7 +86,7 @@ First, ensure that you have installed the following tools locally.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### Product versions
+## Product versions
 
 <!-- prettier-ignore-start -->
 Product | Version
@@ -99,16 +99,15 @@ Product | Version
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### Target technology stack
+## Target technology stack
 
-* A new AWS Account with the Guardrails and all the desired customizations.
-* A new EKS Cluster with a managed node group.
-* Amazon EKS add-ons vpc-cni, CoreDNS, kube-proxy, and aws-ebs-csi-driver.
-* Cluster Autoscaler and Metrics Server for scaling your workloads.
-* Fluent Bit for routing logs.
-* AWS Load Balancer Controller for distributing traffic.
-* Argocd for declarative GitOps CD for Kubernetes.
-* Prometheus for observability.
+- ✅ A new EKS Cluster with a managed node group.
+- ✅ Amazon EKS add-ons `vpc-cni`, `CoreDNS`, `kube-proxy`, and `aws-ebs-csi-driver`.
+- ✅ `Cluster Autoscaler` and `Metrics Server` for scaling your workloads.
+- ✅ `Fluent Bit` for routing logs.
+- ✅ `AWS Load Balancer Controller` for distributing traffic.
+- ✅ `Argocd` for declarative GitOps CD for Kubernetes.
+- ✅ `Prometheus` for observability.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
